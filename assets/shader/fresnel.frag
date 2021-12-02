@@ -31,6 +31,22 @@ void main() {
     //   3. Clamp   : https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml
     //   3. Mix     : https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml
     
+    // Reflect
+    vec3 N = normalize(fs_in.normal);
+    vec3 I = normalize(fs_in.position - fs_in.viewPosition);
+    vec4 reflect_color = vec4(texture(skybox, reflect(I, N)).rgb, 0.0);
     
-    FragColor = vec4(0.5, 0.5, 0.5, 1.0);
+    // Refract
+    vec3 refract_R = refract(I, N, Eta.x);
+    vec3 refract_G = refract(I, N, Eta.y);
+    vec3 refract_B = refract(I, N, Eta.z);
+    vec4 refract_color = vec4(0.0);
+    refract_color.r = texture(skybox, refract_R).r;
+    refract_color.g = texture(skybox, refract_G).g;
+    refract_color.b = texture(skybox, refract_B).b;
+    
+    // Fresnel
+    float ratio = clamp(fresnelBias + fresnelScale * pow(1 + dot(I, N), fresnelPower), 0.0, 1.0);
+    
+    FragColor = mix(refract_color, reflect_color, ratio);
 }
