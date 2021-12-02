@@ -12,5 +12,6 @@ void main() {
     // Hint:
     //   1. We want skybox infinite far from us. So the z should be 1.0 after perspective division.
     //   2. We don't want the skybox moving when we move. So the translation in view matrix should be removed.
-    gl_Position = projection * view * vec4(position_in, 1.0);
+    vec4 pos = projection * view * vec4(position_in, 1.0);
+    gl_Position = pos.xyww;
 }
