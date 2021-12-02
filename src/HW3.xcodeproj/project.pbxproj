@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2806540735364A609DC9963A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0F8DB416B4034C4FBC4CE718 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				F20D88AE4F184DAA8C7AD2A2 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		500F52EAF6FC4333A41E3C3F /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DB5F94A4D9E0430AA14039FF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				2B190A4E29B55440BFA5E245 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				29B87F98305F40EFA43E4074 /* PBXTargetDependency */,
+				3B5975E371A34275AEA37A67 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		A5D0611886ED4340A6370015 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2AD0A84702BE4A61A5FA0973 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1E647653633C465008405312 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09E39A84BF6A43AA93FBF1DF /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/plane.h */ = {isa = PBXBuildFile; fileRef = CDE1816067E14BACB80D8EC3 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/plane.h */; };
+		0E0F673813FD4767B3914BFD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/program.cpp */ = {isa = PBXBuildFile; fileRef = B3B4D325ED6D4B959E3B81A8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/program.cpp */; };
+		175552A2503A42969727957A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/buffer.h */ = {isa = PBXBuildFile; fileRef = 5B4DF4CADC124A62A57B6C64 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/buffer.h */; };
+		23CFFAB104FC469FADEE9078 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/camera.h */ = {isa = PBXBuildFile; fileRef = 2B21F0D28B3847CDB2FB903A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/camera.h */; };
+		313024F1D2C749C7BEBCBEB1 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/plane.cpp */ = {isa = PBXBuildFile; fileRef = 652B72EE8AD14869B61089BB /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/plane.cpp */; };
+		31D5FB82144C496C94D8BF97 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/cube.h */ = {isa = PBXBuildFile; fileRef = CBAAEDA24A65440AB9DA52C4 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/cube.h */; };
+		32E012C77CC44D96B2E87F11 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/sphere.cpp */ = {isa = PBXBuildFile; fileRef = 70A77DAD639D4F3CBFA01F2B /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/sphere.cpp */; };
+		420BA07E9CF74AABB2EBFB26 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/quat_camera.cpp */ = {isa = PBXBuildFile; fileRef = D1EEE78DD2EA4A59B9F48B74 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/quat_camera.cpp */; };
+		4F06D0DFE3A64C40B34D19C9 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/vertexarray.cpp */ = {isa = PBXBuildFile; fileRef = A4D55C6C457C41CE880C92AD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/vertexarray.cpp */; };
+		511C986A8D6B4DA1B0FEAC32 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/camera.cpp */ = {isa = PBXBuildFile; fileRef = E23CC00C2475457CAF692EB2 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/camera.cpp */; };
+		57EA1EA9999D499082757C30 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/cubemap.cpp */ = {isa = PBXBuildFile; fileRef = 5058842CCB7240CCAE0A1C96 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/cubemap.cpp */; };
+		5D2A9DC57EF14F2EBA164C4E /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/graphics.h */ = {isa = PBXBuildFile; fileRef = 211D9122E6D84DE8AC3D33BD /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/graphics.h */; };
+		61643097B8574BED8F34AA3B /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/quat_camera.h */ = {isa = PBXBuildFile; fileRef = DC072733D8AF4BE2B8894ED0 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/quat_camera.h */; };
+		6804660592E74050AD6BF0BA /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/shader.h */ = {isa = PBXBuildFile; fileRef = 233948DEBA77489698EC3D34 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/shader.h */; };
+		80003C11385841FAB00FDF04 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/cubemap.h */ = {isa = PBXBuildFile; fileRef = 52D3BE62854F411BB4F99679 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/cubemap.h */; };
+		893523D04E324377833F458B /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture2d.h */ = {isa = PBXBuildFile; fileRef = 137D8C9F235544F0B1B25D91 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture2d.h */; };
+		942F394720CB43B6913C57EC /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/buffer.cpp */ = {isa = PBXBuildFile; fileRef = BD8D4B556E2B45B1889E8496 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/buffer.cpp */; };
+		9A73A67C0B9545D1A9AC6A39 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/context_manager.cpp */ = {isa = PBXBuildFile; fileRef = 2444367373324DD4AEE3CEE6 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/context_manager.cpp */; };
+		9D5B3D569F3D494087EB26FB /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/framebuffertexture.cpp */ = {isa = PBXBuildFile; fileRef = 2A5C76D55B4C45B8BA7ED7C8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/framebuffertexture.cpp */; };
+		A317C7515DEC4F578DBB7AF6 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/framebuffertexture.h */ = {isa = PBXBuildFile; fileRef = 376CCE1D59324A6E9F55AD92 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/framebuffertexture.h */; };
+		B075DC171F084970BFDDBC11 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture.h */ = {isa = PBXBuildFile; fileRef = AA8178F807744161B0AB21E5 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture.h */; };
+		B6604AAD67644BF68D19A79F /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture2d.cpp */ = {isa = PBXBuildFile; fileRef = E27329812B5C4297BC750232 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture2d.cpp */; };
+		B951EEE4282241BA9C32E605 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/cube.cpp */ = {isa = PBXBuildFile; fileRef = 6A4AB3EDE7854627A5553153 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/cube.cpp */; };
+		BA8D47B04ABD4E41ACF054E7 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/vertexarray.h */ = {isa = PBXBuildFile; fileRef = 52D6842939F04F4E9B0578FF /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/vertexarray.h */; };
+		CAF05AC7D69E479AA9AD41D8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/shape.h */ = {isa = PBXBuildFile; fileRef = F7A3D94920B1479993180ACD /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/shape.h */; };
+		CBC3F2C5A7DC48FD8004CCB8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/context_manager.h */ = {isa = PBXBuildFile; fileRef = AE7E22F55E3A447596770875 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/context_manager.h */; };
+		D33D8066D55E4E6BB195AF77 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 2763C90ACEFD4E4DA78FA824 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/main.cpp */; };
+		DF659D070DA6473496F28C6D /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/shader.cpp */ = {isa = PBXBuildFile; fileRef = 5266C1AD64DA4FD68F18A5CD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/shader.cpp */; };
+		E20852DF495842688DABA4B3 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/sphere.h */ = {isa = PBXBuildFile; fileRef = 558A912901EB4815A9D9554E /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/sphere.h */; };
+		E6F03952EB404053ABBF1576 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/utils.h */ = {isa = PBXBuildFile; fileRef = 98FF101EFCA14E53A494BE0A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/utils.h */; };
+		F2D328F455334746A5B751C1 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8FD0289535684752910CB7EE /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeLists.txt */; };
+		F4635385CAEE415EA66DF22D /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/program.h */ = {isa = PBXBuildFile; fileRef = FECD448E9453466687976620 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/program.h */; };
+		F896DE1C54F04C9A9256B3A8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture.cpp */ = {isa = PBXBuildFile; fileRef = DB850AABF1A2484E9879FC9F /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		20789DA9E884462F893438A1 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		517AF4FD2DC946B5A8C79633 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		5CA97C5D56B44AE3B79A4F25 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		C7D2CA47E2ED4E5F9A7692D1 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		770C684CC0494685B33B685C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BA135B53FE4588A404F114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500F52EAF6FC4333A41E3C3F;
+			remoteInfo = ALL_BUILD;
+		};
+		81F284C0ECE349AFA20F2202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BA135B53FE4588A404F114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B982D078FBE49C8842A8504;
+			remoteInfo = HW3;
+		};
+		A987E0C8A7424C35993A7134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BA135B53FE4588A404F114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D0611886ED4340A6370015;
+			remoteInfo = ZERO_CHECK;
+		};
+		C14850965D9C49F280A2D85E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BA135B53FE4588A404F114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D0611886ED4340A6370015;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		137D8C9F235544F0B1B25D91 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture2d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture2d.h; path = ../include/texture/texture2d.h; sourceTree = SOURCE_ROOT; };
+		211D9122E6D84DE8AC3D33BD /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/graphics.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = graphics.h; path = ../include/graphics.h; sourceTree = SOURCE_ROOT; };
+		233948DEBA77489698EC3D34 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader.h; path = ../include/shader/shader.h; sourceTree = SOURCE_ROOT; };
+		2444367373324DD4AEE3CEE6 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/context_manager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = context_manager.cpp; path = context_manager.cpp; sourceTree = SOURCE_ROOT; };
+		2763C90ACEFD4E4DA78FA824 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		2A5C76D55B4C45B8BA7ED7C8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/framebuffertexture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = framebuffertexture.cpp; path = texture/framebuffertexture.cpp; sourceTree = SOURCE_ROOT; };
+		2B21F0D28B3847CDB2FB903A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = ../include/camera/camera.h; sourceTree = SOURCE_ROOT; };
+		376CCE1D59324A6E9F55AD92 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/framebuffertexture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = framebuffertexture.h; path = ../include/texture/framebuffertexture.h; sourceTree = SOURCE_ROOT; };
+		4418EED5D8DA49089B472C29 /* HW3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HW3; sourceTree = BUILT_PRODUCTS_DIR; };
+		5058842CCB7240CCAE0A1C96 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/cubemap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cubemap.cpp; path = texture/cubemap.cpp; sourceTree = SOURCE_ROOT; };
+		5266C1AD64DA4FD68F18A5CD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = shader/shader.cpp; sourceTree = SOURCE_ROOT; };
+		52D3BE62854F411BB4F99679 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/cubemap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cubemap.h; path = ../include/texture/cubemap.h; sourceTree = SOURCE_ROOT; };
+		52D6842939F04F4E9B0578FF /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/vertexarray.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vertexarray.h; path = ../include/buffer/vertexarray.h; sourceTree = SOURCE_ROOT; };
+		558A912901EB4815A9D9554E /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/sphere.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sphere.h; path = ../include/shape/sphere.h; sourceTree = SOURCE_ROOT; };
+		5B4DF4CADC124A62A57B6C64 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = buffer.h; path = ../include/buffer/buffer.h; sourceTree = SOURCE_ROOT; };
+		5D3689FC55234D8AA4AE43F3 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		652B72EE8AD14869B61089BB /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/plane.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = plane.cpp; path = shape/plane.cpp; sourceTree = SOURCE_ROOT; };
+		6A4AB3EDE7854627A5553153 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/cube.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cube.cpp; path = shape/cube.cpp; sourceTree = SOURCE_ROOT; };
+		70A77DAD639D4F3CBFA01F2B /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/sphere.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sphere.cpp; path = shape/sphere.cpp; sourceTree = SOURCE_ROOT; };
+		8FD0289535684752910CB7EE /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		98FF101EFCA14E53A494BE0A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utils.h; path = ../include/utils.h; sourceTree = SOURCE_ROOT; };
+		A4D55C6C457C41CE880C92AD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/vertexarray.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vertexarray.cpp; path = buffer/vertexarray.cpp; sourceTree = SOURCE_ROOT; };
+		AA8178F807744161B0AB21E5 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture.h; path = ../include/texture/texture.h; sourceTree = SOURCE_ROOT; };
+		AE7E22F55E3A447596770875 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/context_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = context_manager.h; path = ../include/context_manager.h; sourceTree = SOURCE_ROOT; };
+		B3B4D325ED6D4B959E3B81A8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = program.cpp; path = shader/program.cpp; sourceTree = SOURCE_ROOT; };
+		BD8D4B556E2B45B1889E8496 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/buffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = buffer.cpp; path = buffer/buffer.cpp; sourceTree = SOURCE_ROOT; };
+		CBAAEDA24A65440AB9DA52C4 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/cube.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cube.h; path = ../include/shape/cube.h; sourceTree = SOURCE_ROOT; };
+		CDE1816067E14BACB80D8EC3 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/plane.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = plane.h; path = ../include/shape/plane.h; sourceTree = SOURCE_ROOT; };
+		D1EEE78DD2EA4A59B9F48B74 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/quat_camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quat_camera.cpp; path = camera/quat_camera.cpp; sourceTree = SOURCE_ROOT; };
+		DB850AABF1A2484E9879FC9F /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = texture/texture.cpp; sourceTree = SOURCE_ROOT; };
+		DC072733D8AF4BE2B8894ED0 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/quat_camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = quat_camera.h; path = ../include/camera/quat_camera.h; sourceTree = SOURCE_ROOT; };
+		E23CC00C2475457CAF692EB2 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = camera/camera.cpp; sourceTree = SOURCE_ROOT; };
+		E27329812B5C4297BC750232 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture2d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture2d.cpp; path = texture/texture2d.cpp; sourceTree = SOURCE_ROOT; };
+		F7A3D94920B1479993180ACD /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shape.h; path = ../include/shape/shape.h; sourceTree = SOURCE_ROOT; };
+		FECD448E9453466687976620 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = program.h; path = ../include/shader/program.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A6E6DC695754605AC391999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AA88678D27644D3AAEF24B3 = {
+			isa = PBXGroup;
+			children = (
+				6E20877CE5B64206A2A8DB1F /* HW3 */,
+				C33AD2E1608B4ECBB3BEB1AA /* ALL_BUILD */,
+				CC1578CEE4524C6B84A1AE42 /* Products */,
+				8C1ED919F2514E7E9C7F5904 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44DFC58179254CBB9EA772CE /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B4DF4CADC124A62A57B6C64 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/buffer.h */,
+				52D6842939F04F4E9B0578FF /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/buffer/vertexarray.h */,
+				2B21F0D28B3847CDB2FB903A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/camera.h */,
+				DC072733D8AF4BE2B8894ED0 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/camera/quat_camera.h */,
+				AE7E22F55E3A447596770875 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/context_manager.h */,
+				211D9122E6D84DE8AC3D33BD /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/graphics.h */,
+				FECD448E9453466687976620 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/program.h */,
+				233948DEBA77489698EC3D34 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shader/shader.h */,
+				CBAAEDA24A65440AB9DA52C4 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/cube.h */,
+				CDE1816067E14BACB80D8EC3 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/plane.h */,
+				F7A3D94920B1479993180ACD /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/shape.h */,
+				558A912901EB4815A9D9554E /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/shape/sphere.h */,
+				52D3BE62854F411BB4F99679 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/cubemap.h */,
+				376CCE1D59324A6E9F55AD92 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/framebuffertexture.h */,
+				AA8178F807744161B0AB21E5 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture.h */,
+				137D8C9F235544F0B1B25D91 /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/texture/texture2d.h */,
+				98FF101EFCA14E53A494BE0A /* /Users/zhangyang/Documents/Assignments/CG/HW3/include/utils.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4D3200959BA24403B5064F55 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6E20877CE5B64206A2A8DB1F /* HW3 */ = {
+			isa = PBXGroup;
+			children = (
+				E66E3E9A3B3948D08CDAE8A6 /* Source Files */,
+				44DFC58179254CBB9EA772CE /* Header Files */,
+				8FD0289535684752910CB7EE /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeLists.txt */,
+			);
+			name = HW3;
+			sourceTree = "<group>";
+		};
+		8C1ED919F2514E7E9C7F5904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C33AD2E1608B4ECBB3BEB1AA /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4D3200959BA24403B5064F55 /* CMake Rules */,
+				5D3689FC55234D8AA4AE43F3 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		CC1578CEE4524C6B84A1AE42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4418EED5D8DA49089B472C29 /* HW3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E66E3E9A3B3948D08CDAE8A6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD8D4B556E2B45B1889E8496 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/buffer.cpp */,
+				A4D55C6C457C41CE880C92AD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/vertexarray.cpp */,
+				E23CC00C2475457CAF692EB2 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/camera.cpp */,
+				D1EEE78DD2EA4A59B9F48B74 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/quat_camera.cpp */,
+				2444367373324DD4AEE3CEE6 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/context_manager.cpp */,
+				2763C90ACEFD4E4DA78FA824 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/main.cpp */,
+				B3B4D325ED6D4B959E3B81A8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/program.cpp */,
+				5266C1AD64DA4FD68F18A5CD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/shader.cpp */,
+				6A4AB3EDE7854627A5553153 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/cube.cpp */,
+				652B72EE8AD14869B61089BB /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/plane.cpp */,
+				70A77DAD639D4F3CBFA01F2B /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/sphere.cpp */,
+				5058842CCB7240CCAE0A1C96 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/cubemap.cpp */,
+				2A5C76D55B4C45B8BA7ED7C8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/framebuffertexture.cpp */,
+				DB850AABF1A2484E9879FC9F /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture.cpp */,
+				E27329812B5C4297BC750232 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture2d.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B982D078FBE49C8842A8504 /* HW3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 479516CF1E85465AA9CBBC8D /* Build configuration list for PBXNativeTarget "HW3" */;
+			buildPhases = (
+				B39D917CC63940C88C874A23 /* Sources */,
+				3A6E6DC695754605AC391999 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA3373DA90E4C8BA7A5DCD3 /* PBXTargetDependency */,
+			);
+			name = HW3;
+			productName = HW3;
+			productReference = 4418EED5D8DA49089B472C29 /* HW3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11BA135B53FE4588A404F114 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 22491C47465F4A3E96DA3AA3 /* Build configuration list for PBXProject "HW3" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				517AF4FD2DC946B5A8C79633 /* Debug */,
+				20789DA9E884462F893438A1 /* Release */,
+				5CA97C5D56B44AE3B79A4F25 /* MinSizeRel */,
+				C7D2CA47E2ED4E5F9A7692D1 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 1AA88678D27644D3AAEF24B3;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				500F52EAF6FC4333A41E3C3F /* ALL_BUILD */,
+				1B982D078FBE49C8842A8504 /* HW3 */,
+				A5D0611886ED4340A6370015 /* ZERO_CHECK */,
+				2806540735364A609DC9963A /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E647653633C465008405312 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  make -f /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  make -f /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  make -f /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  make -f /Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		2B190A4E29B55440BFA5E245 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/zhangyang/Documents/Assignments/CG/HW3/src/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/zhangyang/Documents/Assignments/CG/HW3/src
+  /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B39D917CC63940C88C874A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942F394720CB43B6913C57EC /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/buffer.cpp */,
+				4F06D0DFE3A64C40B34D19C9 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/buffer/vertexarray.cpp */,
+				511C986A8D6B4DA1B0FEAC32 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/camera.cpp */,
+				420BA07E9CF74AABB2EBFB26 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/camera/quat_camera.cpp */,
+				9A73A67C0B9545D1A9AC6A39 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/context_manager.cpp */,
+				D33D8066D55E4E6BB195AF77 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/main.cpp */,
+				0E0F673813FD4767B3914BFD /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/program.cpp */,
+				DF659D070DA6473496F28C6D /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shader/shader.cpp */,
+				B951EEE4282241BA9C32E605 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/cube.cpp */,
+				313024F1D2C749C7BEBCBEB1 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/plane.cpp */,
+				32E012C77CC44D96B2E87F11 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/shape/sphere.cpp */,
+				57EA1EA9999D499082757C30 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/cubemap.cpp */,
+				9D5B3D569F3D494087EB26FB /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/framebuffertexture.cpp */,
+				F896DE1C54F04C9A9256B3A8 /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture.cpp */,
+				B6604AAD67644BF68D19A79F /* /Users/zhangyang/Documents/Assignments/CG/HW3/src/texture/texture2d.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29B87F98305F40EFA43E4074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B982D078FBE49C8842A8504 /* HW3 */;
+			targetProxy = 81F284C0ECE349AFA20F2202 /* PBXContainerItemProxy */;
+		};
+		3B5975E371A34275AEA37A67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D0611886ED4340A6370015 /* ZERO_CHECK */;
+			targetProxy = A987E0C8A7424C35993A7134 /* PBXContainerItemProxy */;
+		};
+		4BA3373DA90E4C8BA7A5DCD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D0611886ED4340A6370015 /* ZERO_CHECK */;
+			targetProxy = C14850965D9C49F280A2D85E /* PBXContainerItemProxy */;
+		};
+		F20D88AE4F184DAA8C7AD2A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500F52EAF6FC4333A41E3C3F /* ALL_BUILD */;
+			targetProxy = 770C684CC0494685B33B685C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AD1C926341D4242933F7C12 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhangyang/Documents/Assignments/CG/HW3/bin;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLFW_INCLUDE_NONE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/src/../include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glad/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glfw/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/stb/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glm,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/bin,"$(inherited)");
+				LLVM_LTO = YES_THIN;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-flto=thin' -fPIE '-march=native' -Wall -Wextra -Wpedantic '-std=c++2a' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_demo.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_draw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_glfw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_opengl3.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_tables.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_widgets.o",/Users/zhangyang/Documents/Assignments/CG/HW3/bin/libglfw.3.4.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HW3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		218F827113934E959466275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src/build;
+			};
+			name = Release;
+		};
+		398611A768594190AD48F61F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		43C3BDF461824DD8BAC1F871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4755196D53A94D26B6AA9B94 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		55EB8036946D47A8ADDDEF37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6054E8C6468E4274BAC47B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		67FD830178454CC88ADF4A67 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src/build;
+			};
+			name = RelWithDebInfo;
+		};
+		8A4C397973F24CC8982986FB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		93C1A634122F4176A51A3B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9B8CDF0DBDFA4B30AC89EE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhangyang/Documents/Assignments/CG/HW3/bin;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLFW_INCLUDE_NONE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/src/../include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glad/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glfw/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/stb/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glm,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/bin,"$(inherited)");
+				LLVM_LTO = YES_THIN;
+				OTHER_CPLUSPLUSFLAGS = "   '-flto=thin' -fPIE '-march=native' -Wall -Wextra -Wpedantic '-std=c++2a' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_demo.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_draw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_glfw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_opengl3.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_tables.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_widgets.o",/Users/zhangyang/Documents/Assignments/CG/HW3/bin/libglfw.3.4.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HW3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9D5A3EA8F79F4C7F9C7FCEA7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A998906C4FC8404888EEAC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src/build;
+			};
+			name = Debug;
+		};
+		B42377BBDDD04FCEA388760B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src/build;
+			};
+			name = MinSizeRel;
+		};
+		BB3FC64336214A0D82BF4B54 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BF9BDDC16F014BEC88CDC867 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C30DD67AA9414A0892F10355 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E1E91F8D18E4431795C47B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhangyang/Documents/Assignments/CG/HW3/bin;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLFW_INCLUDE_NONE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/src/../include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glad/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glfw/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/stb/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glm,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/bin,"$(inherited)");
+				LLVM_LTO = YES_THIN;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-flto=thin' -fPIE '-march=native' -Wall -Wextra -Wpedantic '-std=c++2a' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_demo.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_draw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_glfw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_opengl3.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_tables.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_widgets.o",/Users/zhangyang/Documents/Assignments/CG/HW3/bin/libglfw.3.4.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HW3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E5E3BDA7D7FB4EE48DF54184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FDB25C0B89264370BA28058D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zhangyang/Documents/Assignments/CG/HW3/bin;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLFW_INCLUDE_NONE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/src/../include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glad/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glfw/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/stb/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/include,/Users/zhangyang/Documents/Assignments/CG/HW3/extern/glm,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (/Users/zhangyang/Documents/Assignments/CG/HW3/bin,"$(inherited)");
+				LLVM_LTO = YES_THIN;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-flto=thin' -fPIE '-march=native' -Wall -Wextra -Wpedantic '-std=c++2a' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_demo.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_draw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_glfw.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_impl_opengl3.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_tables.o","/Users/zhangyang/Documents/Assignments/CG/HW3/extern/imgui/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/imgui.build/$(OBJECT_FILE_DIR_normal:base)/x86_64/imgui_widgets.o",/Users/zhangyang/Documents/Assignments/CG/HW3/bin/libglfw.3.4.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HW3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/zhangyang/Documents/Assignments/CG/HW3/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F8DB416B4034C4FBC4CE718 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55EB8036946D47A8ADDDEF37 /* Debug */,
+				6054E8C6468E4274BAC47B85 /* Release */,
+				BB3FC64336214A0D82BF4B54 /* MinSizeRel */,
+				C30DD67AA9414A0892F10355 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22491C47465F4A3E96DA3AA3 /* Build configuration list for PBXProject "HW3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A998906C4FC8404888EEAC0A /* Debug */,
+				218F827113934E959466275B /* Release */,
+				B42377BBDDD04FCEA388760B /* MinSizeRel */,
+				67FD830178454CC88ADF4A67 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2AD0A84702BE4A61A5FA0973 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C3BDF461824DD8BAC1F871 /* Debug */,
+				E5E3BDA7D7FB4EE48DF54184 /* Release */,
+				8A4C397973F24CC8982986FB /* MinSizeRel */,
+				9D5A3EA8F79F4C7F9C7FCEA7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		479516CF1E85465AA9CBBC8D /* Build configuration list for PBXNativeTarget "HW3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8CDF0DBDFA4B30AC89EE93 /* Debug */,
+				E1E91F8D18E4431795C47B16 /* Release */,
+				FDB25C0B89264370BA28058D /* MinSizeRel */,
+				0AD1C926341D4242933F7C12 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DB5F94A4D9E0430AA14039FF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C1A634122F4176A51A3B6D /* Debug */,
+				398611A768594190AD48F61F /* Release */,
+				4755196D53A94D26B6AA9B94 /* MinSizeRel */,
+				BF9BDDC16F014BEC88CDC867 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11BA135B53FE4588A404F114 /* Project object */;
+}
