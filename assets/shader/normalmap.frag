@@ -2,10 +2,10 @@
 layout(location = 0) out vec4 FragColor;
 
 in VS_OUT {
-  vec3 position;
-  vec3 lightDirection;
-  vec2 textureCoordinate;
-  flat vec3 viewPosition;
+    vec3 position;
+    vec3 lightDirection;
+    vec2 textureCoordinate;
+    flat vec3 viewPosition;
 } fs_in;
 
 uniform bool useParallaxMapping;
@@ -18,8 +18,7 @@ uniform sampler2D normalTexture;
 uniform sampler2D heightTexture;
 float depthScale = 0.01;
 
-vec2 parallaxMapping(vec2 textureCoordinate, vec3 viewDirection)
-{
+vec2 parallaxMapping(vec2 textureCoordinate, vec3 viewDirection) {
     // number of depth layers
     const float minLayers = 8;
     const float maxLayers = 32;
@@ -31,7 +30,7 @@ vec2 parallaxMapping(vec2 textureCoordinate, vec3 viewDirection)
 
 void main() {
     vec3 viewDirection = normalize(fs_in.viewPosition - fs_in.position);
-    vec2 textureCoordinate = useParallaxMapping ? parallaxMapping(fs_in.textureCoordinate, viewDirectionection) : fs_in.textureCoordinate;
+    vec2 textureCoordinate = useParallaxMapping ? parallaxMapping(fs_in.textureCoordinate, viewDirection) : fs_in.textureCoordinate;
     if(useParallaxMapping && (textureCoordinate.x > 1.0 || textureCoordinate.y > 1.0 || textureCoordinate.x < 0.0 || textureCoordinate.y < 0.0))
     discard;
     // Query diffuse texture
@@ -43,14 +42,13 @@ void main() {
     //   2. Convert the value from RGB [0, 1] to normal [-1, 1], this will be inverse of what you do in calculatenormal.frag's output.
     //   3. Remember to NORMALIZE it again.
     //   4. Use Blinn-Phong shading here with parameters ks = kd = 0.75
-    
-    vec3 normal = texture(normalTexture, textureCoordinate);
+    vec3 normal = texture(normalTexture, textureCoordinate).xyz;
     normal = normalize(normal * 2.0) - 1.0;
     vec3 lightDir = normalize(fs_in.lightDirection);
     float diffuse = 0.75 * max(dot(normal, lightDir), 0.0);
     vec3 halfwayDir = normalize(lightDir + viewDirection);
     float specular = 0.75 * pow(max(dot(normal, halfwayDir), 0.0), 8.0);
-    
+
     float lighting = ambient + diffuse + specular;
     FragColor = vec4(lighting * diffuseColor, 1.0);
 }

@@ -46,7 +46,7 @@ void main() {
     
     vs_out.position = TBN * position_in;
     vs_out.lightDirection = TBN * lightDirection;
-    vs_out.viewPosition = TBN * viewPosition;
+    vs_out.viewPosition = TBN * viewPosition.xyz;
     
     vec3 displacementVector = vec3(0);
     if (useDisplacementMapping) {

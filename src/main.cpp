@@ -200,8 +200,7 @@ int main() {
         if (isCameraMove || isWindowSizeChanged) {
             isWindowSizeChanged = false;
             shaderPrograms[0].use();
-            glm::mat4 view = glm::mat4(glm::mat3(currentCamera->getViewMatrix()));
-            shaderPrograms[0].setUniformMatrix("view", glm::value_ptr(view));
+            shaderPrograms[0].setUniformMatrix("view", glm::value_ptr(currentCamera->getViewMatrix()));
             shaderPrograms[0].setUniformMatrix("projection", currentCamera->getProjectionMatrixPTR());
 
             cameraUBO.load(0, sizeof(glm::mat4), currentCamera->getViewProjectionMatrixPTR());
