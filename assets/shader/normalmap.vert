@@ -51,6 +51,7 @@ void main() {
     vec3 displacementVector = vec3(0);
     if (useDisplacementMapping) {
     // TODO (Bonus-Displacement): Set displacementVector, you should scale the height query from heightTexture by depthScale.
+        displacementVector = depthScale * texture(heightTexture, textureCoordinate_in).xyz;
     }
     gl_Position = viewProjectionMatrix * (modelMatrix * vec4(position_in + displacementVector, 1.0));
 }

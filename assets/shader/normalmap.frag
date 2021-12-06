@@ -25,14 +25,17 @@ vec2 parallaxMapping(vec2 textureCoordinate, vec3 viewDirection) {
     // TODO (Bonus-Parallax): Implement parallax occlusion mapping.
     // Hint: You need to return a new texture coordinate.
     // Note: The texture is 'height' texture, you may need a 'depth' texture, which is 1 - height.
-    return textureCoordinate;
+    float height = texture(heightTexture, textureCoordinate).r;
+    float depth = 1 - height;
+    vec2 p = viewDirection.xy / viewDirection.z * depth * depthScale;
+    return textureCoordinate - p;
 }
 
 void main() {
     vec3 viewDirection = normalize(fs_in.viewPosition - fs_in.position);
     vec2 textureCoordinate = useParallaxMapping ? parallaxMapping(fs_in.textureCoordinate, viewDirection) : fs_in.textureCoordinate;
     if(useParallaxMapping && (textureCoordinate.x > 1.0 || textureCoordinate.y > 1.0 || textureCoordinate.x < 0.0 || textureCoordinate.y < 0.0))
-    discard;
+        discard;
     // Query diffuse texture
     vec3 diffuseColor = texture(diffuseTexture, textureCoordinate).rgb;
     // Ambient intensity

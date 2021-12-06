@@ -28,6 +28,4 @@ void main() {
     normal = vec4(normalize(0.5 * (normal1 + normal2)), 0);
     normal = normal * 0.5 + 0.5;
     height = sin(offset - 0.1 * pos.y);
-    //normal = vec4(0, 0, 0, 0);
-    //height = 0;
 }
